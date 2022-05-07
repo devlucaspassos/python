@@ -5,15 +5,10 @@ tamanho_frase = len(frase)
 contador = 0
 nova_string = ''
 
-
 #print(tamanho_frase)  # --> Será exibido o valor "34".
 
 while contador < tamanho_frase:
-    letra = frase[contador]
-    if letra == 'r':
-        nova_string += 'R'
-    else:
-        nova_string += letra
+    #print(frase[contador], contador)
+    nova_string += frase[contador]
+    print(nova_string)
     contador += 1
-
-print(nova_string)
