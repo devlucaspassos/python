@@ -1,19 +1,12 @@
-#        Índices
-#        0123456789.......................34
-frase = "O rato roeu a roupa do rei de Roma"
-tamanho_frase = len(frase)
-contador = 0
-nova_string = ''
+while True:
+    nota_dig = input('Digite uma nota de 0 a 10: ')
 
-
-#print(tamanho_frase)  # --> Será exibido o valor "34".
-
-while contador < tamanho_frase:
-    letra = frase[contador]
-    if letra == 'r':
-        nova_string += 'R'
+    if nota_dig.isnumeric():
+        if int(nota_dig) > 10 or int(nota_dig) < 1:
+            print('Digite um valor de 1 a 10')
+            continue
+        else:
+            print('Nota aplicada.')
+            break
     else:
-        nova_string += letra
-    contador += 1
-
-print(nova_string)
+        print('Não foi possível inserir a nota, por favor digite um número.')
