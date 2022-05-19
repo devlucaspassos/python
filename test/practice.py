@@ -1,12 +1,10 @@
-while True:
-    nota_dig = input('Digite uma nota de 0 a 10: ')
+from traceback import print_exc
 
-    if nota_dig.isnumeric():
-        if int(nota_dig) > 10 or int(nota_dig) < 1:
-            print('Digite um valor de 1 a 10')
-            continue
-        else:
-            print('Nota aplicada.')
-            break
-    else:
-        print('Não foi possível inserir a nota, por favor digite um número.')
+
+x = ('banana', 'morango', 'melão')
+
+print(x) # --> Retornará:('banana', 'morango', 'melão')
+
+y = enumerate(x)
+
+print(list(y)) # --> Retornará: [(0, 'banana'), (1, 'morango'), (2, 'melão')]
