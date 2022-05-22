@@ -1,10 +1,13 @@
-from traceback import print_exc
+a, *b, c = [1, 2, 3, 4, 5]
 
 
-x = ('banana', 'morango', 'melão')
+print(a) # --> Retornará: 1
 
-print(x) # --> Retornará:('banana', 'morango', 'melão')
+print(b) # --> Retornará: [2, 3, 4]
 
-y = enumerate(x)
+print(c) # --> Retornará: 5
 
-print(list(y)) # --> Retornará: [(0, 'banana'), (1, 'morango'), (2, 'melão')]
+
+
+
+
