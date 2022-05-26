@@ -1,13 +1,11 @@
-a, *b, c = [1, 2, 3, 4, 5]
+x = range(8)
 
+c1 = 0
+c2 = 10
 
-print(a) # --> Retornará: 1
-
-print(b) # --> Retornará: [2, 3, 4]
-
-print(c) # --> Retornará: 5
-
-
-
-
-
+for n in x:
+    if c1 == 0 or c2 == 10:
+        print(c1, c2)
+    c1 += 1
+    c2 -= 1 
+    print(c1, c2)
