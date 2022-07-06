@@ -3,6 +3,8 @@
 # HIERARQUIA: O bloco de códigos deve ter 4 espaços (1 TAB) em relação a palavra-chave.
 if 10 > 20:
     print('banana')  # Será exibido caso a expressão da estrutura if acima for verdadeira.
+    print('gato')
+    print('pamonha')
 elif 10 == 10:  
     print('morango') 
 elif 10 == 10:  # Essa linha só será executada se as condições anteriores não forem verdadeiras.

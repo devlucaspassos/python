@@ -1,0 +1,1 @@
+print('A chance de uma pessoa ser atingida por um raio é de 1 em {:0<7}, caso esta pessoa esteja em uma situação propícia, como estar numa tempestade, em uma área aberta, debaixo de alguma árvore, etc, essa chance pode cair para 1 em {:0<4}.'.format(1, 1))
