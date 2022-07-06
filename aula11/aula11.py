@@ -1,71 +1,65 @@
-'''
-OPERADORES LÓGICOS AND, OR E NOT(inversor), IN e NOT IN.
-'''
+# AUla 11 - Operadores lógicos AND, OR E NOT(inversor), IN e NOT IN.
 
-#O operador AND funciona como um "e", e sendo utilizada, cria um dependencia entre as comparações.
-
-from ctypes.wintypes import PINT
-
+# O operador AND funciona como um "e", e sendo utilizada, cria um dependencia entre as comparações.
 
 a = 2
 b = 2
 c = 3 
 
-print(a == b and b < c) # O interpretador vai verificar ambas as comparações.
-#Como a comparação a == b e b < c são verdeiras, a saída será True. 
-print(a == b and b > c) #A primeira comparação é verdadeira, porém a segunda é falsa. 
-#A saída será False, e só será verdadeira, se AMBAS as comparações forem verdadeiras.
+# O interpretador vai verificar ambas as comparações.
+print(a == b and b < c)  # >> True
+# Como a comparação a == b e b < c são verdeiras, a saída será True. 
 
-#O operador OR funciona como um "ou" e sendo utilizado, não cria dependencia entre comparações.
-print(a == b or b > c)#A primeira comparação é verdadeira, porém a segunda é falsa. 
+print(a == b and b > c)  # >> False
+# A primeira comparação é verdadeira, porém a segunda é falsa. 
+# A saída será False, e a saída só será True, se ambas as comparações forem verdadeiras.
+
+# O operador OR funciona como um "ou" e sendo utilizado, não cria dependencia entre comparações.
+
+a = 2
+b = 2
+c = 3 
+
+print(a == b or b > c) # >> True
+# A primeira comparação é verdadeira, porém a segunda é falsa. 
 # A saída será True, se uma das duas forem verdadeiras.
 
-#O Operador NOT (inversor) vai inverter os valores.
+# O Operador NOT (inversor) vai inverter os valores.
 
 a = 2
 b = 3
 
-if not b > a: 
-    print('B é maior que A') 
-    '''
-    A comparação acima é verdadeira, pois 2 é menor (<) que 3, porém, com a utilização do operator NOT, os valores são invertiso, logo a se torna 3 e b se torna 2, fazendo com que a comparação se torne falsa.
-    '''
+if not b > a:  # O operador NOT inverte os valores de a e b. Tornando a expressão falsa.
+    print('B é maior que A')
 else:
-    print('A é maior que B')
+    print('A é maior que B')  # >> Essa mensagem será exibida.
 
 
-'''Operadores IN e NOT IN (Operadores de Associação) servem para '''
+# Operadores de associação IN e NOT IN.
 
-nome = 'Lucas Passos'
+nome = 'João'
 
-#Nesse exemplo, quero saber se existe a letra "i" nesse nome.
+# Nesse exemplo, quero saber se existe a letra "J" no nome "João".
 
-if 'i' in nome :
-    print('Existe a letra i no nome Lucas Passos')
+if 'J' in nome:
+    print(f'Existe a letra "J" no nome {nome}')
 else:
-    print('Não existe a letra i no nome Lucas Passos')
+    print(f'Não existe a letra "J" no nome {nome}')
 
-#Outro exemplo 
+# Outro exemplo da utilização do operador IN. 
 
-if 'uca' in nome:
-    print('Existe "uca" no nome Lucas Passos') #Verdadeiro (True)
+cpf = '010.714.350-00'
 
-
-if 'Luc' not in nome: #O operador NOT IN é o inversor do operador IN.
-    print('Existe "Luc" no nome Lucas Passos')
+if '10' in cpf:
+    print(f'Existe o número 10 no cpf: {cpf}') 
 else:
-    print('Não existe "Luc" no nome Lucas Passos') 
-    '''A comparação acima seria verdadeira, pois existe "Luc" em Lucas, mas o operador NOT IN inverteu a compração.'''
+    print(f'Não existe o número 10 no cpf : {cpf}')
 
-#EXEMPLO DE VERIFICADOR DE LOGIN E SENHA
+# Exemplo da utilização do operador NOT IN, que é o inversor do operador IN.
 
-login = input('Digite seu nome de usuário: ')
-senha = input('Digite sua senha: ')
+nome = 'João'
 
-usuario_bd = 'josilva6'
-senha_bd = 'Jo01011978'
-
-if login == usuario_bd and senha == senha_bd:
-    print('Login realizado com sucessor')
+if 'J' not in nome:  # Utilização do operador NOT.
+    print(f'Existe a letra "J" no nome {nome}')
 else:
-    print('Não foi possível realizar o login')
+    print(f'Não existe a letra "J" no nome {nome}')  # >> Mensagem que será exibida.

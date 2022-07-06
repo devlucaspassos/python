@@ -1,23 +1,23 @@
-secret_word = 'python'
+secret_word = 'girafa' # --> Palavra secreta da forca.
 typed_letter = []
 chances = 3
 
 while True:
     if chances < 1:
-        print('Game Over')
+        print('Você perdeu! kkkkkkkkk')
         break
     
-    letter = input('Type a letter: ')
+    letter = input('Digite uma letra: ')
     if len(letter) > 1:
-        print("Ahh c'mon, it's just one letter my boy.")
+        print("Digite apenas uma letra meu chapa!")
         continue
     
     typed_letter.append(letter)
 
     if letter in secret_word:
-        print(f'Yeaah, there is a "{letter}" in the secret word.')
+        print(f'BOA! existe uma letra "{letter}" na palavra secreta. ')
     else:
-        print(f'Sorry, but there is no "{letter}" in secret word.')
+        print(f'Que pena! Não existe a letra "{letter}" na palavra secreta.')
         typed_letter.pop()
     
     temporary_secret = ''
@@ -28,15 +28,16 @@ while True:
             temporary_secret += '*'
     
     if temporary_secret == secret_word:
-        print(f"YEAHH MY NWORD, YOU'VE GOT THE SAUCE. THE SECRET WORD WAS \"{temporary_secret}\".")
+        print("\U0001f600")
+        print(f"Parabéns, a palavra secreta é:  \"{temporary_secret}\".")
         break
     else:
-        print(f'The secret word is currently: {temporary_secret}.')
+        print(f'Palavra: {temporary_secret}.')
     
     if letter not in secret_word:
         chances -= 1
     
-    print(f"Currently you've got {chances} chances.")
+    print(f"Atualmente você tem {chances} chances.")
 
     print()
 

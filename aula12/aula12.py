@@ -1,21 +1,12 @@
-'''
-Função LEN
-'''
+# Aula 12 - Função len()
 
-usuario = input('Digite seu nome de usuário: ')
-qtd_caracteres = len(usuario)
-qtd_minima = 6
+lista = ['suco de goiaba', 'suco de maracujá', 'suco de acerola']
 
-print(usuario, qtd_caracteres, type(qtd_caracteres))
+x = len(lista)  # A função len() retornará o número de itens dentro da lista.
 
-if qtd_caracteres < qtd_minima:
-    print('Insira 6 ou mais caracteres')
-else:
-    print('Login realizado com sucesso')
+print(x)  # >> 3 
 
-string1 = input('Digite alguma coisa: ')
-string2 = input('Digite mais alguma coisa: ')
+y = 'vitamina' 
 
-print(f'A soma do número de caracteres das variáveis "input1" e "input2" é: {len(string1) + len(string2)}')
-
-
+print(len(y)) # >> 8
+# A função len() acima retornou o número de caracteres da string "vitamina".

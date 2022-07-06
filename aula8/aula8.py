@@ -1,21 +1,14 @@
-#Input: entrada de dados dos usuário.
+# Aula 8 - Função input(): entrada de dados dos usuário.
 
-
-input('Qual o seu nome? ')  # ---> Função string() que permite que o usuário ensira um dado (string)
-#O dado inserído pelo usuário será sempre retornado como uma str.
-
-'''é possível atribuir essa função input em uma variável. Nesse caso, o dado inserido pelo usuário
-será atribuído a aquela variável.
-'''
-nome = input('Qual seu nome? ')
-idade = int(input('Qual sua idade? '))  #--> Dá para fazer o type casting de um dado da função print
-cidade = input('Qual idade você reside? ')
+# Veja abaixo a função input() que permite que o usuário ensira um dado.
+nome = input('Qual seu nome? ')  # atribuindo o valor recebido a uma variável.
+idade = int(input('Qual sua idade? '))  # É possível fazer o type casting de um dado da função print().
+cidade = input('Qual cidade você nasceu? ')
 ano_atual = 2022
-ano_nasc = ano_atual - int(idade)  # ---> Também é possível fazer o type casting no nome da variável
+ano_nasc = ano_atual - int(idade)  # Também é possível fazer o type casting na variável.
 
-print()
+# Exibindo um texto utilizando as variáveis que receberam valores da função input().
 print(f'O nome do usuário é {nome} e tem {idade} anos de idade.' f' {nome} nasceu no ano de {ano_nasc} na cidade de {cidade}.')
-'''A função print acima exibirá: "O nome do usuário é Lucas e tem 24 anos de idade. Lucas nasceu no ano de 1998 na cidade de Acaraú."'''
 
 
 

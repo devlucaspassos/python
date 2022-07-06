@@ -1,27 +1,17 @@
-'''
-Iniciar com letras, pode conter números, separar _, letras minúsculas.
-'''
-# Exemplo de variáveis abaixo
-nome = 'Lucas'  # --> Exemplo de string sendo atribuída a variável "Lucas"
-idade = 23  # --> Exemplo de int sendo atribuída a variável "idade"
-altura = 1.90  # --> Exemplo de float sendo atribuida a variável altura
-i_maior = idade > 18  # --> Exemplo de comparação utilizando a variável "idade"
-mes_1 = True  # --> Variável com número no nome e valor bool
-data_atual = 2022  # --> Váriavel com _ separando as duas palavras
+# Aula 7 - Formatando texto com f-string.
 
-# Uso das variáveis
+nome = 'Maria'
+peso = 58
+altura = 1.60
+idade = 21
+imc = peso / (altura * altura)
 
-print('Nome:', nome)
-print('Idade:', idade)
-print('Altura:', altura)
-print('Maior que 18 anos?', i_maior)
+# Veja abaixo a exibição de um texto sem a utilização do f-string.
+print(nome, 'tem', idade, 'anos de idade e seu IMC é', imc)
+# >> Maria tem 21 anos de idade e seu IMC é 22.656249999999996
 
-# As funções prints acima irão exibir os seguintes valores:
-'''Nome: Lucas
-Idade: 23
-Altura: 1.9
-Maior que 18 anos? True'''
+# Veja abaixo abaixo a exibição de um texto onde foi aplicado o f-string.
+print(f'{nome} tem {idade} anos de idade e seu IMC é {imc:.2f}') 
+# >> Maria tem 21 anos de idade e seu IMC é 22.66
 
-#Também é possível utilizar as variáveis para fazer operações
-print(idade * altura) # ---> a var idade está associada ao int 23 e a var altura ao float "1.90".
-#A função print acima irá exibir "43.699999999999996" (1.90 * 23 = 43.699999999999996)
+# Você pode inserir variáveis dentro da f-string, contanto que as delimite com chaves {}.

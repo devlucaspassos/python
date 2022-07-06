@@ -1,11 +1,4 @@
-x = range(8)
+nome_1 = input('Digite um nome: ')
+nome_2 = input('Digite um nome: ')
 
-c1 = 0
-c2 = 10
-
-for n in x:
-    if c1 == 0 or c2 == 10:
-        print(c1, c2)
-    c1 += 1
-    c2 -= 1 
-    print(c1, c2)
+print(f'A soma do número de caracteres dos nomes {nome_1} e {nome_2} é: {len(nome_1) + len(nome_2)}')

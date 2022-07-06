@@ -1,6 +1,6 @@
 from traceback import print_tb
 
-
+# Aula 25 -  Operadores ternários
 logged_user = False # --> Se usuário está logado ou não.
 
 '''

@@ -1,16 +1,16 @@
-# print(123456)  # Nesse exemplo, os argumentos 123456 serão exibidos na tela.
-# print('Sorvete')   # Nesse exemplo, o argumento "Sorvete" será exebida na tela. 
-# print('Lucas', 'Passos', 'Qualquer coisa')  # Os arguementos podem ser separados por vírgula, e serão exibidos na tela com espaços entre sí.
-#print('Lucas', 'Passos', sep='-')  # utilizando o parâmetro sep, você pode substituir o espaço padrão entre as strings pelo -.
-# print('Lucas', 'Passos', sep='-', end='')
-# print('João', 'e', 'Maria', sep='-', end='')
+# Aula 2 - Função print() e seus parâmetros sep e end.
 
-#Exercício: Monte um cpf separando os números com pontos e traço.
+print('Olá, mundo!')  # >> Olá, mundo
+print(123456)  # >> 123456
 
-print('201', '702', '305', sep='.', end='-')
-print('11')
+# Os parâmetros podem ser separados por vírgula, e serão exibidos na tela com espaços entre sí.
+print('banana', 'morango', 'cajú')  # >> banana morango cajú
 
+# Utilizando o parâmetro sep, você pode substituir o espaço padrão entre as strings por outro caractere, como o * por exemplo.
+print('cachorro', 'avestruz', sep='*')  # >> cachorro*avestruz
 
+# Utilizando o parâmetro end, você pode substituir o caractere final da string, que por padrão é a quebra de linha, por outro caractere.
 
-
-
+print('eu', 'quero', end=' ')  # Espaço como valor deste parâmetro.
+print('comer', 'pizza') 
+# >> eu quero comer pizza
