@@ -16,7 +16,8 @@ print(animal)  # >> cavalo
 print(idade)  # >> 23
 print(altura)  # >> 1.9
 print(num)  # >> True
-print(x)  # >> False
+print(f)  # >> False
+print(x)  # >> 10
 
 # Também é possível utilizar as variáveis para realizar operações matemáticas.
 print(idade * altura)  # >> 43.699999999999996 

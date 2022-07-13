@@ -1,3 +1,8 @@
+
+# apagar aulas que podem ser juntadas e renomear as pastas das aulas.
+
+
+
 '''
 while / else
 contadores 

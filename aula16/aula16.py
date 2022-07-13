@@ -1,67 +1,95 @@
-'''while em Python - aula 7
-Utilizado para realizar ações enquanto uma condição for verdadeira.
+# Aula 16 - Laço de repetição while
 
-requisitos - entender condições e operadores.
+# 1 - Laço while
 
+while 10 == 9:  # --> Condição
+    print('banana')
+    print('morango')
+    print('uva')
 
-'''
-
-'''O laço While verifica se uma condição é verdadeira, que no exemplo abaixo é explicitamente verdadeira, e enquanto essa condição for verdadeira, o bloco de códigos será aplicado.'''
-
-'''while True: # Loop infinito
-    nome = input('Qual seu nome? ')
-    print(f'Olá, {nome}')
-
-print('Não será executada') # --> Essa linha de código não será aplicada.'''
-
-'''Após o interpretador terminar de ler a última linha de código do bloco, ele irá checar novamente a mesma condição, que caso continue sendo verdadeira, irá novamente aplicar o bloco de códigos, criando um loop infinito que só deverá cessar caso a condição se torne falsa.'''
+print('Não será executada')  
+# A função print() acima só será executada quando o laço while foi cessado.
 
 
+# 2 - Contador e acumulador
 
-'''x = 0 
+
+contador = 1  # O contador é acumulado de forma linear, ex: 0, 1, 2, 3...
+
+while contador <= 100:
+    print(contador)
+    contador += 1
+
+contador = 1 
+acumulador = 1
+
+while contador <= 10:
+    print(contador, acumulador)
+    acumulador += contador  # Novo valor atribído a variável 'acumulador'.
+    contador += 1  # Novo valor atribído a variável 'contador'.
+
+
+# 3 - Palavra-chave continue
+
+x = 0
+
+while x <= 10:
+    if x == 3:
+        x += 1
+        continue  # A iteração terá fim e uma nova verificação da expressão será feita
+    print(x)
+    x += 1
+print('Fim!')
+
+
+# 4 - Palavra-chave break
+
+
+x = 0 
 
 while x < 10:
     if x == 3:
-        x = x + 1
-        break
+        break  # A repetição terá um fim definitivo.
     print(x)
     x = x + 1
 
-print('Acabou!')  '''
+print('Fim!')
 
 
-'''x = 0 
+# 5 - Laço while e estrutura condicional else
 
-while x < 5:
-    y = 0
+contador = 1 
+acumulador = 1
 
-    while y < 5:
-        print(f'({x},{y})')
-        y = y + 1
+while contador <= 10:
+    print(contador, acumulador)
+    acumulador += contador
+    contador += 1
+else: 
+    print('Aplicação do comando condicional else.')
 
-    x += 1'''
 
-while True:
-    print()
-    num_1 = input(f'Digite um número: ')
-    num_2 = input(f'Digite outro número: ')
+# 6 - Iterando string com while
 
-    if not num_1.isnumeric() or not num_2.isnumeric():
-        print(f'Por favor, digite um número.')
-        continue
+#        Índices
+#        0123456789.......................34 
+frase = "O rato roeu a roupa do rei de Roma"
+tamanho_frase = len(frase)  # Essa string tem 34 caracteres.
+contador = 0
 
-    operador = input(f'Digite um operador (+, -, *, /): ')
+while contador < tamanho_frase:
+    print(frase[contador], contador)
+    contador += 1
 
-    num_1 = int(num_1)
-    num_2 = int(num_2)
 
-    if operador == '+':
-            print(num_1 + num_2)
-    elif operador == '-':
-        print(num_1 - num_2)
-    elif operador == '*':
-        print(num_1 * num_2)
-    elif operador == '/':
-        print(num_1 / num_2)
-    else: 
-        print(f'Digite um dos operadores')
+#        Índices
+#        0123456789.......................34
+frase = "O rato roeu a roupa do rei de Roma"
+tamanho_frase = len(frase)
+contador = 0
+nova_string = ''
+
+while contador < tamanho_frase:
+    nova_string += frase[contador]
+    print(nova_string)
+    contador += 1

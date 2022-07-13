@@ -16,7 +16,7 @@ print(10 * 'A')  # >> AAAAAAAAAA
 # O operador de soma (+) quando usado entre strings, faz a concatenação (Junção) das mesmas.
 print('abaca' + 'xi')  # >> acabaxi
 
-# Concatenando mais de duas strings.
+# Concatenando mais várias strings.
 print('gosto' + ' ' + 'de' + ' ' + 'café')  # >> gosto de café
 
 # É possível concatenar strings e fazer o casting (conversão) de tipos de dados.
