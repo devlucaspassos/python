@@ -11,7 +11,7 @@ print(texto[3])  # >> h
 print(texto[-1])  # >> 2
 # Índice negativo do valor "2" dentro da string.
 
-# caso seja feita um acesso de um índice inexistente, ocorrerá um erro.
+# Caso seja feita um acesso de um índice inexistente, ocorrerá um erro.
 print(texto[9])  # >> IndexError: string index out of range
 
 # Fatiamento de índices

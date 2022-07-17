@@ -4,7 +4,7 @@
 print(10 + 10)  # Operador de soma.
 print(10 - 10)  # Operador de subtração.
 print(10 * 10)  # Operador de multiplicação.
-print(10 ** 10)  # Operador de potenciação (Nesse caso vai ser 10 elevado a 10 = 100).
+print(10 ** 2)  # Operador de potenciação.
 print(10 / 10)  # Operador de divisão.
 print(10 // 10)  # Operador de divisão inteira (vai arredondar os números).
 print(19 % 18)  # Operador módulo (exibe o resto de uma divisão).

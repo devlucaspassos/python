@@ -1,19 +1,10 @@
-
-# apagar aulas que podem ser juntadas e renomear as pastas das aulas.
-
-
+# Aula 17 - laço for in, iteração de string com for e fnção range()
 
 '''
-while / else
-contadores 
-acumuladores
+for in em Python 
+Iterando strings com for
+função range(start=0, stop, step1)
 '''
-contador = 1 
-acumulador = 1
 
-while contador <= 10:
-    print(contador, acumulador)
-    acumulador = acumulador + contador
-    contador += 1
-else:
-    print('Aplicação do comando condicional else.')
+for num in range(0, 100, 8):
+    print(num)
