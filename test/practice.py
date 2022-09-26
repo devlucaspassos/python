@@ -1,3 +1,3 @@
-nome = input('Digite seu nome: ')
+num = int(input('Digite um número: '))
 
-print(f'É um prazer te conhecer {nome}!')
+print(f'Seu número é: {num:0<5}')
